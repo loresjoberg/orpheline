@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Widow Hunter Test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/orpheline.js"></script>
+</head>
+<body>
+
+<div style="width: 80%">
+
+    <h1>Orpheline Test</h1>
+
+    <h2>The following text should not have widows.</h2>
+
+    <div class="no-orphans">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla elit ut ipsum eleifend, in consequat
+            quam efficitur. Aenean felis leo, viverra ut mi at, rhoncus aliquet tortor. Suspendisse blandit luctus nulla in
+            imperdiet. Nullam et dui at sapien lacinia convallis. Aliquam vulputate nibh eu pellentesque commodo. Sed sed
+            dignissim dolor, sit amet pellentesque ex. Maecenas dignissim, urna a ornare commodo, est orci sagittis urna, id
+            pharetra felis purus eu dui. Duis sed odio quis lacus dapibus fermentum sit amet nec urna. Proin sodales
+            malesuada felis, at vestibulum elit placerat eu. Quisque tempus sit amet ex quis egestas. Sed erat tellus,
+            accumsan et porttitor in, maximus eget eros. Etiam vitae justo arcu.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis consequat odio, vel vulputate dui
+            tincidunt et. Aenean interdum eleifend tellus ut facilisis. Nunc et ipsum tellus.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna nisi, pretium vel aliquam maximus,
+            sollicitudin sit amet turpis.
+        </p>
+
+    </div>
+
+    <h2>The following text may have widows.</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla elit ut ipsum eleifend, in consequat
+        quam efficitur. Aenean felis leo, viverra ut mi at, rhoncus aliquet tortor. Suspendisse blandit luctus nulla in
+        imperdiet. Nullam et dui at sapien lacinia convallis. Aliquam vulputate nibh eu pellentesque commodo. Sed sed
+        dignissim dolor, sit amet pellentesque ex. Maecenas dignissim, urna a ornare commodo, est orci sagittis urna, id
+        pharetra felis purus eu dui. Duis sed odio quis lacus dapibus fermentum sit amet nec urna. Proin sodales
+        malesuada felis, at vestibulum elit placerat eu. Quisque tempus sit amet ex quis egestas. Sed erat tellus,
+        accumsan et porttitor in, maximus eget eros. Etiam vitae justo arcu.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis consequat odio, vel vulputate dui
+        tincidunt et. Aenean interdum eleifend tellus ut facilisis. Nunc et ipsum tellus.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam magna nisi, pretium vel aliquam maximus,
+        sollicitudin sit amet turpis.
+    </p>
+
+</div>
+<script>
+    $('.no-orphans p').orpheline();
+</script>
+</body>
+</html>
